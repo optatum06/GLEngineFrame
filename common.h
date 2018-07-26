@@ -15,6 +15,7 @@ using namespace std;
 #include "Dependencies/include/GL/glew.h"
 #include "Dependencies/include/GL/glu.h"
 #include "Dependencies/include/GL/gl.h"
+#include "Dependencies/include/GL/glfw3.h"
 
 /*=======CLASS DEFINITIONS=======*/
 

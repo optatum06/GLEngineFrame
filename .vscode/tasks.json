@@ -35,6 +35,7 @@
                 "-lglew32",
                 "-lglew32mx",
                 "-lglu32",
+                "-lglfw3dll"
             ],
             "group": {
                 "kind": "build",
