@@ -1,0 +1,61 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "linux",
+            "identifier": "linux",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "Builds/LinuxBuild/engine",
+                "-g",
+                "--std=c++11",
+                "main.cpp",
+                "-L", "${workspaceFolder}/Dependencies/lib",
+                "-lGL",
+                "-lGLEW",
+                "-lGLU",
+            ]
+        },
+        {
+            "label": "windows",
+            "identifier": "windows",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "Builds/WindowsBuild/engine",
+                "-g",
+                "--std=c++11",
+                "main.cpp",
+                "-L", "${workspaceFolder}/Dependencies/lib",
+                "-lmingw32",
+                "-lopengl32",
+                "-lglew32",
+                "-lglew32mx",
+                "-lglu32",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "osx",
+            "identifier": "osx",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "Builds/OSXBuild/engine",
+                "-g",
+                "--std=c++11",
+                "main.cpp",
+                "-L", "${workspaceFolder}/Dependencies/lib",
+                "-lGL",
+                "-lGLEW",
+                "-lGLU",
+            ]
+        }
+    ],
+}
