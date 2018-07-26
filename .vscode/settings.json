@@ -5,6 +5,7 @@
         "ctime": "cpp",
         "memory": "cpp",
         "list": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "cstdlib": "cpp"
     }
 }
